@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button {
+  -webkit-appearance: unset;
+  border-style: none;
+  padding: 5px 10px;
+  background-color: #00d03b;
+  color: #000;
+  border-radius: 2px;
+}
+
+.button:disabled {
+  background-color: #a9ebbb !important;
+  color: #999 !important;
+}
+
+.muted {
+  color: grey;
+}
+
+.output {
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #EEE;
+  border-radius: .4em .4em 0 .4em;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(100% - 10px);
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #EEE;
+  border-bottom: 0;
+  border-right: 0;
+  margin-right: -5px;
+  margin-bottom: -10px;
+}
